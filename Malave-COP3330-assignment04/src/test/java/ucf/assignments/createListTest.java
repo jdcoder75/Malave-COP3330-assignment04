@@ -26,6 +26,19 @@ class createListTest {
         editL.markDone(/*send in the all lists: createList[] todoList*/);
         editL.addItem(/*send in the all lists: createList[] todoList*/);
 
+
+        //display the different todo lists
+        displayL.displayAll(/*send in the all lists: createList[] todoList*/);
+        displayL.displayComplete(/*send in the all lists: createList[] todoList*/);
+        displayL.displayIncomplete(/*send in the all lists: createList[] todoList*/);
+
+        //saveorload
+        saveOrLoad_List.saveToDoList(/*send in the all lists: createList[] todoList*/);
+        saveOrLoad_List.loadToDoList(/*send in the all lists: createList[] todoList*/);
+        saveOrLoad_List.saveAllToDoList(/*send in the all lists: createList[] todoList*/);
+        saveOrLoad_List.loadAllToDoList(/*send in the all lists: createList[] todoList*/);
+
+
     }
 
 }
