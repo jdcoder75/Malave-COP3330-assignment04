@@ -170,9 +170,9 @@ class display{
                 System.out.println( todoList[i].item, todoList[i].description, todoList[i].dueDate, todoList[i].completed);
         }
     }
-    public void displayIncomplete()
+    public void displayIncomplete(/*send in all lists: createList[] todoList*/)
     {
-        for(/*loop thru the entire hashmap*/)
+        for(/*loop thru the entire list*/)
         {
             if(/*b[i].completed = 0*/)
                 System.out.println( b[i].item, b[i].description, b[i].dueDate, b[i].completed);
@@ -189,7 +189,7 @@ class saveOrLoad {
         //ask the user if they want to save or load
 
     }
-    public void saveToDoList(/*send in the all lists: createList[] todoList*/)
+    public void saveToDoList(/*send in all lists: createList[] todoList*/)
     {
         //ask what list you want to see
         //find title first
@@ -197,17 +197,17 @@ class saveOrLoad {
         //then write it to txt file that the user creates
 
     }
-    public void saveAllToDoList(/*send in the all lists: createList[] todoList*/)
+    public void saveAllToDoList(/*send in all lists: createList[] todoList*/)
     {
 
     }
-    public void loadToDoList(/*send in the all lists: createList[] todoList*/)
+    public void loadToDoList(/*send in all lists: createList[] todoList*/)
     {
         //read in the txt file that you want
         //then add it to the todoLists that are being made
 
     }
-    public void loadAllToDoList()
+    public void loadAllToDoList(/*send in all lists: createList[] todoList*/)
     {
         //here we want to read i/*send in the all lists: createList[] todoList*/n the file
         //ask user what the txt file name is
