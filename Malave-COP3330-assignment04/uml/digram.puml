@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+App -> createList: ask for a list
+createList --> App: sends a todoList back
+
+App -> display: displays the todoList
+
+App -> edit: sends the list
+edit --> App: sends back an altered list
+
+App -> saveOrLoad: sends the list
+saveOrLoad --> App: sends back a loaded up list
+
+@enduml
