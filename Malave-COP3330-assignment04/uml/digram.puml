@@ -1,17 +1,50 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-autonumber
 
-App -> createList: ask for a list
-createList --> App: sends a todoList back
+class createList
+{
++String title
++String[] items
++String[] description
++String[] dueDate
++int[] completed
 
-App -> display: displays the todoList
++public void createList()
+}
+ createList -- app
 
-App -> edit: sends the list
-edit --> App: sends back an altered list
+class display
+{
++public void displayAll()
++public void displayComplete()
++public void displayIncomplete();
+ }
+display <-- app
 
-App -> saveOrLoad: sends the list
-saveOrLoad --> App: sends back a loaded up list
+class edit
+{
++public void addItem()
++public void removeTodoList()
++public void removeItem()
++public void editTitle()
++public void editDueDate()
++public void markDone()
+}
+edit -- app
 
+class saveOrLoad
+{
++public void saveToDoList()
++public void saveAllToDoList()
++public void loadToDoList()
++public void loadAllToDoList()
+}
+saveOrLoad <-- app
+
+class app
+{
++public void main()
+
+}
 @enduml
